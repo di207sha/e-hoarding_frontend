@@ -23,8 +23,7 @@ export default function SignIn() {
         <Box display="flex" justifyContent="center" alignItems="center" height="100vh" bgcolor="#f5f5f5">
             <Paper elevation={3} sx={{ padding: 4, width: 350 }}>
                 <Typography variant="h5" fontWeight="bold" align="center" gutterBottom>
-                    {/* Sign In */}
-                    Login
+                    Sign In
                 </Typography>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <TextField
