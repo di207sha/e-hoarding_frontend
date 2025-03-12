@@ -1,0 +1,173 @@
+.body{
+  background-color: #f3f3f3 !important;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/* Container */
+.form-container {
+      
+    width: 100%;
+    max-width:700px;
+    margin: 0 auto;
+    padding: 40px;
+    /* background: linear-gradient(135deg, #e0f7fa, #f8bbd0); */
+    /* background: linear-gradient(135deg, #e0f7fa, #364779); */
+    background-color: #ffffff;
+    /* border: 1px solid #96020e; 8293f6 */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  
+  /* Heading */
+  .form-heading {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: navy;
+    margin-bottom: 30px;
+    /* text-transform: uppercase; */
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 35px; /* Increased space between form groups */
+    position: relative;
+  }
+  
+  /* .form-label {
+    display: block; */
+    /* font-size: 10px; Reduced size of label to 10px */
+    /* font-weight: 500; */
+    /* margin-bottom: 8px; Increased space between label and input */
+    /* color: #555; */
+    /* text-transform: uppercase; Optional for a cleaner look */
+    /* letter-spacing: 0.5px; Optional for better readability */
+  /* } */
+  
+  .form-input {
+    border: none !important;
+    border-bottom: 2px solid #ccc !important; /* adjust the color and thickness as needed */
+    background: transparent !important;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0 !important; 
+    outline: none !important;
+    box-shadow: none !important;
+  }
+ 
+
+  .form-input:focus {
+    border-color: navy !important;
+    /* box-shadow: 0 0 10px rgba(255, 64, 129, 0.3); */
+    outline: none;
+  }
+  
+  textarea.form-input {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .select-input {
+    height: 40px;
+  }
+
+  .form-input[type="file"] {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .form-input[type="file"]:hover {
+    border-color: navy;
+  }
+  
+  
+  
+  /* Error Messages */
+  .error-text {
+    color: navy;
+    font-size: 13px;
+    position: absolute;
+    /* bottom: -18px;
+    left: 0; */
+    top: 3px;
+    right: 10px;
+    font-weight: 500;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: navy;
+  }
+  
+  /* Hover effect for the inputs */
+  .form-input:hover {
+    border-color: navy;
+  }
+  
+  .form-group .form-input::placeholder {
+    color: #8d8d8d;
+  }
+  
+  /* Focused label effect */
+  .form-group .form-input:focus::placeholder {
+    color: transparent;
+  }
+  
+  .form-group .form-label {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    font-size: 10px; /* Reduced size of label to 10px */
+    transition: all 0.3s ease;
+    color: #888;
+  }
+  
+  .form-group .form-input:focus + .form-label,
+  .form-group .form-input:not(:placeholder-shown) + .form-label {
+    top: -20px;
+    font-size: 8px; /* Adjust font size when label moves up */
+    color: navy;
+  }
+  
+  /* Additional padding for form */
+  .form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .form-container {
+      padding: 25px;
+    }
+  
+    .form-heading {
+      font-size: 24px;
+    }
+  
+    .form-input,
+    .submit-btn {
+      font-size: 14px;
+    }
+  }
