@@ -3,9 +3,9 @@ import { AppBar, Toolbar, Typography, Button, Container, Box, Grid, Card, CardCo
 import { Link } from "react-router-dom";
 import { LocationOn, Payment, Search } from "@mui/icons-material";
 import { motion } from "framer-motion";
-import { fadeIn, hoverEffect, featureHover, fadeInSlow } from "../src/animations/MotionVariant";
-import takeoutdoor from "../src/assets/takeoutdoor.png";
-import backgroundImage from "../src/assets/EH-2.png";
+import { fadeIn, hoverEffect, featureHover, fadeInSlow } from "../animations/MotionVariant";
+import takeoutdoor from "../assets/takeoutdoor.png";
+import backgroundImage from "../assets/EH-2.png";
 
 export default function Home() {
   const [anchorEl, setAnchorEl] = useState(null);

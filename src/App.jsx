@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SignIn from '../component/SignIn';
-import SignUp from '../component/SignUp';
-import AppTheme from "../component/AppTheme";
-import Home from '../component/Home';
-import { Registration } from '../component/Registration';
+import SignIn from './component/SignIn';
+import SignUp from './component/SignUp';
+import AppTheme from "./component/AppTheme";
+import Home from './component/Home';
+import { Registration } from './component/Registration';
 
 
 function App() {

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useForm } from "react-hook-form";
-import  "../src/assets/css/registration.css";
+import  "../assets/css/registration.css";
 
 export const Registration = () => {
 
